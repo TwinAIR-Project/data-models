@@ -1,7 +1,7 @@
 {
     "@context": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/fsystems/context.jsonld",
     "id": "urn:ngsi-ld:fsystems:AIRplus8C4B149DAAA0",
-    "type": "hwsensors",
+    "type": "fsystems",
     "name": {
         "type": "Property",
         "value": "AIRplus8C4B149DAAA0"

@@ -5,11 +5,11 @@
         "name": "https://smartdatamodels.org/name",
         "description": "http://purl.org/dc/terms/description",
         "refPilot": {
-            "@id": "https://raw.githubusercontent.com/balbert-etraid/twinair/main/models/pilot/context.jsonld",
+            "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/pilot/context.jsonld",
             "@type": "ngsi-ld:Relationship"
         },
         "refRoom": {
-            "@id": "https://raw.githubusercontent.com/balbert-etraid/twinair/main/models/room/context.jsonld",
+            "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/room/context.jsonld",
             "@type": "ngsi-ld:Relationship"
         },
         "activePower": "https://smartdatamodels.org/dataModel.Energy/totalActivePower",

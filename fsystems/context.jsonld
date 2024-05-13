@@ -1,0 +1,29 @@
+{
+    "@context": {
+        "id": "@id",
+        "type": "@type",
+        "name": "https://smartdatamodels.org/name",
+        "description": "http://purl.org/dc/terms/description",
+        "refPilot": {
+            "@id": "https://raw.githubusercontent.com/balbert-etraid/twinair/main/models/pilot/context.jsonld",
+            "@type": "ngsi-ld:Relationship"
+        },
+        "refRoom": {
+            "@id": "https://raw.githubusercontent.com/balbert-etraid/twinair/main/models/room/context.jsonld",
+            "@type": "ngsi-ld:Relationship"
+        },
+        "activePower": "https://smartdatamodels.org/dataModel.Energy/totalActivePower",
+        "fanLevel": {
+            "@id": "fanLevel",
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@min": 0,
+            "@max": 10
+        },
+        "filters": {
+            "@id": "filters",
+            "@context": "https://raw.githubusercontent.com/balbert-etraid/twinair/main/models/fsystems/filter/context.jsonld",
+            "@container": "@set"
+        },
+        "observationDateTime": "https://smartdatamodels.org/dataModel.Environment/observationDateTime"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "@context": [
+        {
+            "refPilot": {
+                "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/pilot/context.jsonld",
+                "@type": "ngsi-ld:Relationship"
+            },
+            "refRoom": {
+                "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/room/context.jsonld",
+                "@type": "ngsi-ld:Relationship"
+            }
+        },
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
+    ]
+}

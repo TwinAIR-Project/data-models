@@ -21,7 +21,7 @@
         },
         "filters": {
             "@id": "filters",
-            "@context": "https://raw.githubusercontent.com/balbert-etraid/twinair/main/models/fsystems/filter/context.jsonld",
+            "@context": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/fsystems/filter/context.jsonld",
             "@container": "@set"
         },
         "observationDateTime": "https://smartdatamodels.org/dataModel.Environment/observationDateTime"

@@ -1,0 +1,17 @@
+{
+    "@context": [
+        {
+            "root": "https://smartdatamodels.org/dataModel.Building/root",
+            "bbox": {
+                "@container": "@list",
+                "@id": "geojson:bbox"
+            },
+            "owner": "https://smartdatamodels.org/owner",
+            "refPilot": {
+                "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/pilot/context.jsonld",
+                "@type": "ngsi-ld:Relationship"
+            }
+        },
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
+    ]
+}

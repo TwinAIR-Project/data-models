@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/balbert-etraid/twinair/main/models/vsensors/vsensors-models/context.jsonld",
+    "id": "urn:ngsi-ld:vesensors:16670-lasso",
+    "type": "vsensors",
+    "controlledProperty" : ["pm"],
+    "refPilot": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:pilot:etr_main"
+    },
+    "refRoom": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:room:etr_main_2"
+    },
+    "refModel": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:vsensors-model:16670"
+    },
+    "name": {
+        "type": "Property",
+        "value": "VirtualSensor-v0.6-pm"
+    },
+    "controlledAsset": [ "etra common room" ],
+    "ipAddress": [
+        "192.14.56.78"
+    ],
+    "description": {
+        "type": "Property",
+        "value": "Virtual Sensor vs06 Particulate Matter"
+    },
+    "dateCreated": {
+        "type": "Property",
+        "value": "2024-01-09T15:24:28Z"
+    },
+    "observationDateTime": {
+        "type": "Property",
+        "value": "2024-01-09T15:24:28Z"
+    },
+    "airTemperature": {
+        "type": "Property",
+        "value": 17.08,
+        "name": {
+            "type": "Property",
+            "value": "Air Temperature"
+        },
+        "unitCode": "ºC"
+    }
+}

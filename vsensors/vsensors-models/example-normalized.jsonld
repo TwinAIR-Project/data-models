@@ -1,0 +1,152 @@
+{
+    "@context": "https://raw.githubusercontent.com/balbert-etraid/twinair/main/models/vsensors/vsensors-models/context.jsonld",
+    "id": "urn:ngsi-ld:vsensors-model:16670",
+    "type": "vsensors-model",
+    "controlledProperty": {
+        "type": "Property",
+        "value": [
+            "pm"
+        ]
+    },
+    "name": {
+        "type": "Property",
+        "value": "VirtualSensor-v0.6-pm"
+    },
+    "softwareVersion": {
+        "type": "Property",
+        "value": "vs0"
+    },
+    "firmwareVersion": {
+        "type": "Property",
+        "value": "vs0.6"
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "https://www.ifm.eng.cam.ac.uk/people/jm2210/"
+        ]
+    },
+    "controlledAsset": {
+        "type": "Property",
+        "value": [
+            "etra common room"
+        ]
+    },
+    "description": {
+        "type": "Property",
+        "value": "Virtual Sensor vs06 Particulate Matter"
+    },
+    "dateCreated": {
+        "type": "Property",
+        "value": "2024-01-09T15:24:28Z"
+    },
+    "observationDateTime": {
+        "type": "Property",
+        "value": "2024-01-09T15:24:28Z"
+    },
+    "configuration": {
+        "type": "Property",
+        "value": [
+            {
+                "parameter": "vs_config",
+                "value": {
+                    "activate": true,
+                    "vs_location": {
+                        "pilot_id": "urn:ngsi-ld:pilot:etr_main",
+                        "space_id": "urn:ngsi-ld:room:etr_main_2",
+                        "description": "ETRA common room"
+                    },
+                    "training": {
+                        "from_date": "01/01/2024",
+                        "to_date": "01/03/2024",
+                        "targets": [
+                            "urn:ngsi-ld:hwsensors:16866",
+                            "urn:ngsi-ld:hwsensors:16867",
+                            "urn:ngsi-ld:hwsensors:16868",
+                            "urn:ngsi-ld:hwsensors:16869",
+                            "urn:ngsi-ld:hwsensors:16870"
+                        ],
+                        "validation": [
+                            "urn:ngsi-ld:hwsensors:16866"
+                        ],
+                        "features": [
+                            "pn03",
+                            "pn25",
+                            "pn10"
+                        ],
+                        "estimate": [
+                            "pn03",
+                            "pn25",
+                            "pn10"
+                        ],
+                        "model_persistence": "./vs_models/"
+                    },
+                    "execution": {
+                        "model_path": "./vs_models/",
+                        "models": [
+                            "lasso",
+                            "elastic_net",
+                            "bayesian_ridge",
+                            "decisiontree_adaboost"
+                        ],
+                        "input_hw_targets": [
+                            "urn:ngsi-ld:hwsensors:16866",
+                            "urn:ngsi-ld:hwsensors:16867",
+                            "urn:ngsi-ld:hwsensors:16868",
+                            "urn:ngsi-ld:hwsensors:16869",
+                            "urn:ngsi-ld:hwsensors:16870"
+                        ],
+                        "sampling_rate_minutes": 1,
+                        "timeframe_buffer_minutes": 10
+                    },
+                    "etl": {
+                        "rt_cfg": {
+                            "rt_type": "mqtt",
+                            "mqtt_cfg": {
+                                "mqtt_client_name": "urn:ngsi-ld:vsensors:16866",
+                                "mqtt_username": "twinair@thowl",
+                                "mqtt_password": "twinairthowl",
+                                "mqtt_host": "b23841e6.online-server.cloud",
+                                "mqtt_tenant": "etra",
+                                "mqtt_port": 1883,
+                                "mqtt_topics_prefix": {
+                                    "hwsensors": [
+                                        "hwsensors/+"
+                                    ],
+                                    "vsensors": [
+                                        "vsensors/+"
+                                    ],
+                                    "fsystems": [
+                                        "fsystems/+"
+                                    ],
+                                    "wearable": [
+                                        "wsensors/+"
+                                    ]
+                                },
+                                "mqtt_topics_in": [],
+                                "mqtt_topic_out": "etra/vsensors/16866"
+                            }
+                        },
+                        "db_cfg": {
+                            "db_type": "api",
+                            "technology": "quantumleap",
+                            "tenant": "etra",
+                            "host": "http://twinairdmp.online",
+                            "quantumleap_port": 8669,
+                            "orion_port": 1027,
+                            "token": "b4223c93ac17425a7db6c832389fd97548157904"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "supportedProtocol": {
+        "type": "Property",
+        "value": [
+            "mqtt",
+            "quantumleap",
+            "orion"
+        ]
+    }
+}

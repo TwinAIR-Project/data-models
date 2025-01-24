@@ -9,12 +9,8 @@
                 "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/room/context.jsonld",
                 "@type": "ngsi-ld:Relationship"
             },
-            "refModel": {
-                "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/vsensors/vsensors-models/context.jsonld",
-                "@type": "ngsi-ld:Relationship"
-            }
+            "value": "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
         },
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
     ]
 }

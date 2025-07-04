@@ -10,44 +10,28 @@
                 "@type": "ngsi-ld:Relationship"
             },
             "pm10_lasso": {
-            "@id": "https://smartdatamodels.org/dataModel.Environment/particulateMatter10",
-            "@type": "Property"
+                "@id": "https://smartdatamodels.org/dataModel.Environment/pm10",
+                "@type": "Property"
             },
             "pm10_elastic_net": {
-            "@id": "https://smartdatamodels.org/dataModel.Environment/particulateMatter10",
-            "@type": "Property"
+                "@id": "https://smartdatamodels.org/dataModel.Environment/pm10",
+                "@type": "Property"
             },
             "pm25_lasso": {
-            "@id": "https://smartdatamodels.org/dataModel.Environment/particulateMatter25",
-            "@type": "Property"
+                "@id": "https://smartdatamodels.org/dataModel.Environment/pm25",
+                "@type": "Property"
             },
             "pm25_elastic_net": {
-            "@id": "https://smartdatamodels.org/dataModel.Environment/particulateMatter25",
-            "@type": "Property"
+                "@id": "https://smartdatamodels.org/dataModel.Environment/pm25",
+                "@type": "Property"
             },
             "pm1_lasso": {
-            "@id": "https://smartdatamodels.org/dataModel.Environment/particulateMatter1",
-            "@type": "Property"
+                "@id": "https://smartdatamodels.org/dataModel.Environment/pm1",
+                "@type": "Property"
             },
             "pm1_elastic_net": {
-            "@id": "https://smartdatamodels.org/dataModel.Environment/particulateMatter1",
-            "@type": "Property"
-            },
-            "tvoc_lasso": {
-            "@id": "https://smartdatamodels.org/dataModel.Environment/tvoc",
-            "@type": "Property"
-            },
-            "tvoc_elastic_net": {
-            "@id": "https://smartdatamodels.org/dataModel.Environment/tvoc",
-            "@type": "Property"
-            },
-            "formaldehyde_lasso": {
-            "@id": "https://smartdatamodels.org/dataModel.Environment/formaldehyde",
-            "@type": "Property"
-            },
-            "formaldehyde_elastic_net": {
-            "@id": "https://smartdatamodels.org/dataModel.Environment/formaldehyde",
-            "@type": "Property"
+                "@id": "https://smartdatamodels.org/dataModel.Environment/pm1",
+                "@type": "Property"
             }
         },
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld",

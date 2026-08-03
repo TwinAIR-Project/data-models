@@ -1,0 +1,25 @@
+{
+    "@context": "https://raw.githubusercontent.com/balbert-etraid/twinair/main/models/fsystems/recommendations/context.jsonld",
+    "id": "urn:ngsi-ld:recommendation:6e1ab031-adf0-452c-98c0-217cef2b9e36",
+    "type": "recommendation",
+    "level": {
+        "type": "Property",
+        "value": 3
+    },
+    "description": {
+        "type": "Property",
+        "value": "Recommendation for filter maintenance"
+    },
+    "targetId": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:fsystems:AIRplus30C6F7DF4E98"
+    },
+    "observationDateTime": {
+        "type": "Property",
+        "value": "2026-01-27T13:34:42Z"
+    },
+    "actionDateTime": {
+        "type": "Property",
+        "value": "2026-01-27T13:36:55Z"
+    }
+}

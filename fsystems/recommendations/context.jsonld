@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "id": "@id",
+        "type": "@type",
+        "level": "https://smartdatamodels.org/level",
+        "description": "https://smartdatamodels.org/dataModel.Environment/description",
+        "observationDateTime": "https://smartdatamodels.org/dataModel.Environment/observationDateTime",
+        "actionDateTime": "https://smartdatamodels.org/dataModel.Environment/startDateTime",
+        "targetId": {
+            "@id": "https://raw.githubusercontent.com/balbert-etraid/twinair/main/models/fsystems/context.jsonld",
+            "@type": "ngsi-ld:Relationship"
+        }
+    }
+}

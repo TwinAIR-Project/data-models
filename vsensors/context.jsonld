@@ -1,32 +1,62 @@
 {
-    "@context": [
-            {        
-            "pm10_lasso": {
-                "@id": "https://smartdatamodels.org/dataModel.Environment/pm10",
-                "@type": "Property"
-            },
-            "pm10_elastic_net": {
-                "@id": "https://smartdatamodels.org/dataModel.Environment/pm10",
-                "@type": "Property"
-            },
-            "pm25_lasso": {
-                "@id": "https://smartdatamodels.org/dataModel.Environment/pm25",
-                "@type": "Property"
-            },
-            "pm25_elastic_net": {
-                "@id": "https://smartdatamodels.org/dataModel.Environment/pm25",
-                "@type": "Property"
-            },
-            "pm1_lasso": {
-                "@id": "https://smartdatamodels.org/dataModel.Environment/pm1",
-                "@type": "Property"
-            },
-            "pm1_elastic_net": {
-                "@id": "https://smartdatamodels.org/dataModel.Environment/pm1",
-                "@type": "Property"
-            }
-        },
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld"
-    ]
+  "@context": [
+    {
+      "refPilot": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/pilot/context.jsonld",
+        "@type": "ngsi-ld:Relationship"
+      },
+      "refRoom": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/room/context.jsonld",
+        "@type": "ngsi-ld:Relationship"
+      },
+
+      "pm1_lasso": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/vsensors/pm1_lasso",
+        "@type": "ngsi-ld:Property"
+      },
+      "pm1_elastic_net": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/vsensors/pm1_elastic_net",
+        "@type": "ngsi-ld:Property"
+      },
+
+      "pm25_lasso": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/vsensors/pm25_lasso",
+        "@type": "ngsi-ld:Property"
+      },
+      "pm25_elastic_net": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/vsensors/pm25_elastic_net",
+        "@type": "ngsi-ld:Property"
+      },
+
+      "pm10_lasso": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/vsensors/pm10_lasso",
+        "@type": "ngsi-ld:Property"
+      },
+      "pm10_elastic_net": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/vsensors/pm10_elastic_net",
+        "@type": "ngsi-ld:Property"
+      },
+
+      "tvoc_lasso": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/vsensors/tvoc_lasso",
+        "@type": "ngsi-ld:Property"
+      },
+      "tvoc_elastic_net": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/vsensors/tvoc_elastic_net",
+        "@type": "ngsi-ld:Property"
+      },
+
+      "formaldehyde_lasso": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/vsensors/formaldehyde_lasso",
+        "@type": "ngsi-ld:Property"
+      },
+      "formaldehyde_elastic_net": {
+        "@id": "https://raw.githubusercontent.com/TwinAIR-Project/data-models/main/vsensors/formaldehyde_elastic_net",
+        "@type": "ngsi-ld:Property"
+      }
+    },
+
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Environment/master/context.jsonld",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+  ]
 }
